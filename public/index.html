@@ -339,6 +339,17 @@
         grid-template-columns: 1fr;
         gap: 20px;
       }
+
+      .footer-col:nth-child(2),
+      .footer-col:last-child {
+        display: block;
+        justify-content: unset;
+      }
+
+      .footer-col:nth-child(2) .footer-col-inner,
+      .footer-col:last-child .footer-col-inner {
+        display: block;
+      }
     }
 
     .footer-col:first-child {

@@ -168,15 +168,7 @@
     }
 
     .layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-      gap: 22px;
-    }
-
-    @media (max-width: 799px) {
-      .layout {
-        grid-template-columns: minmax(0, 1fr);
-      }
+      max-width: 100%;
     }
 
     .hero-title {
@@ -332,56 +324,6 @@
       color: var(--text-soft);
     }
 
-    .side-panel {
-      border-radius: 10px;
-      border: 1px solid #e5e5e5;
-      padding: 12px 14px 10px;
-      background: #ffffff;
-    }
-
-    .side-section-title {
-      font-size: 12px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--text-soft);
-      margin: 0 0 8px;
-    }
-
-    .side-body {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.5;
-      margin-bottom: 10px;
-    }
-
-    .side-body strong {
-      color: var(--text-main);
-      font-weight: 600;
-    }
-
-    .side-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-
-    .side-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 6px;
-      margin-bottom: 6px;
-    }
-
-    .side-bullet {
-      width: 4px;
-      height: 4px;
-      border-radius: 999px;
-      margin-top: 6px;
-      background: var(--text-soft);
-    }
-
     .page-footer {
       padding-top: 12px;
       margin-top: 16px;
@@ -437,43 +379,16 @@
           </div>
 
           <article class="project-card">
-            <div class="project-label">01 · Buy on Chance</div>
+            <div class="project-label">01 · E‑Commerce Platform</div>
             <div class="project-title">
               <div class="project-title-main">Buy on Chance e‑commerce platform</div>
-              <div class="project-status">In design &amp; prototyping</div>
             </div>
             <p class="project-body">
-              A <strong>“buy on chance” e‑commerce platform</strong> that blends fixed‑price shopping
-              with probabilistic purchasing. Customers decide how much certainty they want;
-              merchants get a new demand channel instead of just another discount bin.
+              An e‑commerce platform that blends shopping with probabilistic purchasing.
             </p>
           </article>
         </section>
       </section>
-
-      <aside class="side-panel" aria-label="About Desert Bay, LLC">
-        <h3 class="side-section-title">Operated by Desert Bay, LLC</h3>
-        <p class="side-body">
-          <strong>Desert Bay, LLC</strong> is the company behind Twiqit Lab. We design, build,
-          and operate a small portfolio of internet businesses—quietly, deliberately, and with
-          a long‑term mindset.
-        </p>
-        <h3 class="side-section-title">How we work</h3>
-        <ul class="side-list">
-          <li>
-            <span class="side-bullet"></span>
-            <span><strong>Few bets at a time</strong> · A compact portfolio with room to think and iterate.</span>
-          </li>
-          <li>
-            <span class="side-bullet"></span>
-            <span><strong>From sketch to system</strong> · Ideas move from notes and mocks into working software.</span>
-          </li>
-          <li>
-            <span class="side-bullet"></span>
-            <span><strong>Quietly compounding</strong> · Preference for durable, useful products over hype.</span>
-          </li>
-        </ul>
-      </aside>
     </main>
 
     <footer class="page-footer">
@@ -481,9 +396,6 @@
         <span>Twiqit Lab</span>
         <span>·</span>
         <span>Operated by Desert Bay, LLC</span>
-      </div>
-      <div class="footer-right">
-        Future projects from the lab will appear here as they move beyond exploration.
       </div>
     </footer>
   </div>

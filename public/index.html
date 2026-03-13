@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Twiqit Labs · Portfolio</title>
+  <title>Twiqit Lab · Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Twiqit Labs is the product studio of Desert Bay, LLC, building a small portfolio of internet businesses including the Buy on Chance e‑commerce concept." />
+  <meta name="description" content="Twiqit Lab is the product studio of Desert Bay, LLC, building a small portfolio of internet businesses including the Buy on Chance e‑commerce concept." />
   <style>
     :root {
       --bg: #304d44;
@@ -35,7 +35,7 @@
         var(--bg);
       display: flex;
       justify-content: center;
-      padding: 40px 16px;
+      padding: 16px 16px 40px;
       text-align: center;
     }
 
@@ -58,18 +58,21 @@
 
     .page-header {
       margin: -26px -28px 22px; /* pull header to full width of card */
-      height: 120px;
-      background: #333 url("images/web_header.png") center bottom no-repeat;
-      background-size: cover;
       position: relative;
-      overflow: hidden;
+      line-height: 0;
     }
 
     @media (min-width: 768px) {
       .page-header {
         margin: -30px -36px 24px;
-        height: 140px;
       }
+    }
+
+    .page-header img {
+      width: 100%;
+      height: auto;
+      display: block;
+      vertical-align: bottom;
     }
 
     .page-header-overlay {
@@ -80,6 +83,7 @@
       align-items: flex-end;
       justify-content: center;
       padding: 12px 20px;
+      pointer-events: none;
     }
 
     .page-header-inner {
@@ -413,9 +417,10 @@
 <body>
   <div class="page">
     <header class="page-header">
+      <img src="images/web_header.png" alt="Twiqit Labs" />
       <div class="page-header-overlay">
         <div class="page-header-inner">
-          <div class="page-header-title">Twiqit Lab</div>
+          
         </div>
       </div>
     </header>
@@ -426,22 +431,9 @@
         <p class="hero-subtitle">
           Twiqit Lab is a product studio focused on turning sharp, simple concepts into real businesses with design, technology, and operations powered by AI
         </p>
-        <div class="hero-meta">
-          <div class="chip">
-            <span class="chip-dot"></span>
-            <span class="chip-label">Focus</span>
-            <span class="chip-value">Few projects, long horizon</span>
-          </div>
-          <div class="chip">
-            <span class="chip-label">Based in</span>
-            <span class="chip-value">Twiqit Labs · Desert Bay, LLC</span>
-          </div>
-        </div>
-
-        <section class="portfolio" aria-label="Twiqit Labs portfolio">
+        <section class="portfolio" aria-label="Twiqit Lab portfolio">
           <div class="portfolio-header">
             <h2>Portfolio</h2>
-            <span class="portfolio-count">1 / Many</span>
           </div>
 
           <article class="project-card">
@@ -455,15 +447,6 @@
               with probabilistic purchasing. Customers decide how much certainty they want;
               merchants get a new demand channel instead of just another discount bin.
             </p>
-            <div class="project-tags">
-              <span class="project-tag">Business · New margin structure</span>
-              <span class="project-tag">Design · Playful, non‑gambling flows</span>
-              <span class="project-tag">Tech · Event‑driven pricing engine</span>
-            </div>
-            <p class="project-note">
-              Business, design, and technical concepts for Buy on Chance are captured within the lab’s internal
-              documentation and prototypes.
-            </p>
           </article>
         </section>
       </section>
@@ -471,7 +454,7 @@
       <aside class="side-panel" aria-label="About Desert Bay, LLC">
         <h3 class="side-section-title">Operated by Desert Bay, LLC</h3>
         <p class="side-body">
-          <strong>Desert Bay, LLC</strong> is the company behind Twiqit Labs. We design, build,
+          <strong>Desert Bay, LLC</strong> is the company behind Twiqit Lab. We design, build,
           and operate a small portfolio of internet businesses—quietly, deliberately, and with
           a long‑term mindset.
         </p>
@@ -495,7 +478,7 @@
 
     <footer class="page-footer">
       <div class="footer-left">
-        <span>Twiqit Labs</span>
+        <span>Twiqit Lab</span>
         <span>·</span>
         <span>Operated by Desert Bay, LLC</span>
       </div>

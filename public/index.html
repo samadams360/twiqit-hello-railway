@@ -184,7 +184,6 @@
     .hero-subtitle {
       font-size: 14px;
       color: var(--text-muted);
-      max-width: 520px;
       margin: 0 0 16px;
     }
 
@@ -325,33 +324,74 @@
     }
 
     .page-footer {
-      padding-top: 12px;
-      margin-top: 16px;
+      padding-top: 28px;
+      margin-top: 24px;
       border-top: 1px solid #e5e5e5;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      font-size: 11px;
-      color: var(--text-soft);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px 32px;
+      font-size: 13px;
+      color: var(--text-muted);
     }
 
-    @media (min-width: 640px) {
+    @media (max-width: 599px) {
       .page-footer {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 20px;
       }
     }
 
-    .footer-left {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      align-items: center;
+    .footer-col:first-child {
+      text-align: left;
     }
 
-    .footer-right {
-      opacity: 0.9;
+    .footer-col:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .footer-col:nth-child(2) .footer-col-inner {
+      text-align: left;
+    }
+
+    .footer-col:last-child {
+      display: flex;
+      justify-content: flex-end;
+      text-align: left;
+    }
+
+    .footer-col:last-child .footer-col-inner {
+      text-align: left;
+    }
+
+    .footer-col h4 {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-soft);
+      margin: 0 0 12px;
+      font-weight: 600;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-col li {
+      margin-bottom: 8px;
+    }
+
+    .footer-col a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -370,29 +410,32 @@
     <main class="layout">
       <section class="hero">
 
-        <p class="hero-subtitle">
-          Twiqit is a product studio focused on turning sharp, simple concepts into real businesses with design, technology, and operations powered by AI
-        </p>
-        <section class="portfolio" aria-label="Twiqit portfolio">
-          <div class="portfolio-header">
-            <h2>Portfolio</h2>
-          </div>
-
-          <article class="project-card">
-            <div class="project-label">01 · E‑Commerce Platform</div>
-            <p class="project-body">
-              An e‑commerce platform that blends shopping with probabilistic purchasing.
-            </p>
-          </article>
-        </section>
+        <p class="hero-subtitle">Twiqit is a product studio focused on turning sharp, simple concepts into real businesses with design, technology, and operations powered by AI</p>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="footer-left">
-        <span>Twiqit</span>
-        <span>·</span>
-        <span>Operated by Desert Bay, LLC</span>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">E‑Commerce</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-inner">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Company</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-inner">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </div>
